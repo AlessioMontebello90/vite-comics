@@ -4,19 +4,21 @@ export default {};
 
 <template>
   <header>
-    <img src="../assets/img/dc-logo.png" alt="" />
-    <ul class="head_list">
-      <li>CHARACTER</li>
-      <li>COMICS</li>
-      <li>MOVIES</li>
-      <li>TV</li>
-      <li>GAMES</li>
-      <li>COLLECTIBLES</li>
-      <li>VIDEOS</li>
-      <li>FANS</li>
-      <li>NEWS</li>
-      <li>SHOP</li>
-    </ul>
+    <nav>
+      <img src="../assets/img/dc-logo.png" alt="" />
+      <ul class="head_list">
+        <li>CHARACTER</li>
+        <li>COMICS</li>
+        <li>MOVIES</li>
+        <li>TV</li>
+        <li>GAMES</li>
+        <li>COLLECTIBLES</li>
+        <li>VIDEOS</li>
+        <li>FANS</li>
+        <li>NEWS</li>
+        <li>SHOP</li>
+      </ul>
+    </nav>
   </header>
 </template>
 
@@ -24,6 +26,10 @@ export default {};
 @use "./../assets/styles/partials/variables.scss" as *;
 header {
   background-color: white;
+}
+nav {
+  max-width: 1200px;
+  margin: auto;
   height: 6rem;
   display: flex;
   align-items: center;
