@@ -95,7 +95,7 @@ export default {};
 <style lang="scss" scoped>
 @use "./../assets/styles/partials/variables.scss" as *;
 .footer-up {
-  background-color: blue;
+  background-color: rgb(2, 130, 249);
   .options {
     display: flex;
     align-items: center;
@@ -166,7 +166,7 @@ export default {};
     button {
       background-color: transparent;
       color: white;
-      border: 1px solid blue;
+      border: 2px solid solid rgb(12, 119, 234);
       padding: 0.7rem;
     }
     .social {
@@ -175,7 +175,7 @@ export default {};
       gap: 1rem;
     }
     h3 {
-      color: blue;
+      color: rgb(12, 119, 234);
     }
   }
 }
