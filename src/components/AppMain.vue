@@ -113,6 +113,7 @@ main {
   background-color: rgb(28, 28, 28);
   .contents {
     display: flex;
+    flex-wrap: wrap;
 
     max-width: 1200px;
     margin: auto;
