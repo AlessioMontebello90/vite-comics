@@ -85,7 +85,7 @@ header {
       height: 6rem;
       background-color: white;
       img {
-        width: 15%;
+        width: 60%;
       }
     }
   }
