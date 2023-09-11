@@ -132,6 +132,7 @@ main {
     width: 10rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    cursor: pointer;
   }
 }
 </style>
