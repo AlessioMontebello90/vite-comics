@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 .cards {
   width: calc((100% / 6) - 2rem);
-  height: 193.45px;
+  height: 195px;
   margin: 1rem;
   display: flex;
   flex-direction: column;

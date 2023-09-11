@@ -1,57 +1,86 @@
 <script>
+import AppNavbar from "./AppNavbar.vue";
 export default {
+  components: { AppNavbar },
   data() {
-    return {};
+    return {
+      arrList: [
+        {
+          title: "character",
+          link: "#",
+        },
+        {
+          title: "comics",
+          link: "#",
+        },
+        {
+          title: "movies",
+          link: "#",
+        },
+        {
+          title: "tv",
+          link: "#",
+        },
+        {
+          title: "games",
+          link: "#",
+        },
+        {
+          title: "collectibles",
+          link: "#",
+        },
+        {
+          title: "videos",
+          link: "#",
+        },
+        {
+          title: "fans",
+          link: "#",
+        },
+        {
+          title: "news",
+          link: "#",
+        },
+        {
+          title: "shop",
+          link: "#",
+        },
+      ],
+    };
   },
 };
 </script>
 
 <template>
   <header>
-    <nav>
+    <div class="img-container">
       <img src="../assets/img/dc-logo.png" alt="" />
-      <ul class="head_list">
-        <li>CHARACTER</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
-      </ul>
-    </nav>
+    </div>
+    <app-navbar
+      v-for="title in arrList"
+      :key="title.title"
+      :title="title.title"
+      :link="title.link"
+    />
   </header>
 </template>
 
 <style lang="scss" scoped>
 @use "./../assets/styles/partials/variables.scss" as *;
 header {
-  background-color: white;
-}
-nav {
-  max-width: 1200px;
-  margin: auto;
-  height: 6rem;
+  background-image: url("../assets/img/jumbotron.jpg");
+  height: 20rem;
+  background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-.head_list {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  padding-inline: 1rem;
-  font-size: 0.7rem;
-}
-li {
-  padding-inline: 1rem;
-}
-img {
-  width: 6%;
-  padding-left: 1rem;
+  .img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    background-color: white;
+    img {
+      width: 20%;
+    }
+  }
 }
 </style>
