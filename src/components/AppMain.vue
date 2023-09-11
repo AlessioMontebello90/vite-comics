@@ -116,6 +116,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding-top: 2rem;
   .contents {
     display: flex;
